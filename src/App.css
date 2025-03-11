@@ -1,18 +1,32 @@
-.appvide{
+.myapp {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.appcanvas{
-  position: absolute;
-  top: 100px
-}
-
-.myapp{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  position: relative; /* Adicione isso para garantir o posicionamento relativo do conteúdo */
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.appvide {
+  position: relative; /* Certifique-se de que o container tenha o posicionamento relativo */
+}
+
+video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: brightness(4) saturate(1);/* Aumenta o brilho */
+}
+
+.appcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5; /* Isso vai colocar o canvas acima do vídeo */
 }
