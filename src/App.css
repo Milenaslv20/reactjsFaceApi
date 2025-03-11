@@ -9,16 +9,14 @@
   position: relative; /* Adicione isso para garantir o posicionamento relativo do conteúdo */
 }
 
-h1 {
-  margin-bottom: 20px;
-}
 
 .appvide {
   position: relative; /* Certifique-se de que o container tenha o posicionamento relativo */
+  width: 90%;
+  height: 80%;
 }
 
 video {
-  width: 100%;
   height: auto;
   border-radius: 10px;
   filter: brightness(4) saturate(1);/* Aumenta o brilho */
