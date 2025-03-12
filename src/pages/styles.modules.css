@@ -1,0 +1,41 @@
+.container_register{
+    background-color: #282c34;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+
+.myapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    position: relative; /* Adicione isso para garantir o posicionamento relativo do conteúdo */
+  }
+  
+  
+  .appvide {
+    position: relative;
+    display: flex; /* Certifique-se de que o container tenha o posicionamento relativo */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  video {
+    height: 90vh;
+    width: 90vw;
+    border-radius: 10px;
+    /*filter: brightness(4) saturate(1); Aumenta o brilho */
+  }
+  
+  canvas {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    z-index: 5; /* Isso vai colocar o canvas acima do vídeo */
+  }
